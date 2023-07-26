@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Crimson+Text">
     <link href="style.css" rel="stylesheet">
+    <script src="script.js" defer></script>
     <title>Organisation XIII Sign Up</title>
 </head>
 <body>
@@ -67,16 +68,16 @@
                         <br>
                         <label for="old_name">OLD NAME</label>
                         <label for="new_name">NEW NAME</label>
-                        <input class="textfield" type="text" id="old_name" name="old_name">
-                        <input class="textfield" type="text" id="new_name" name="new_name"> 
+                        <input autofocus class="textfield" type="text" id="old_name" name="old_name" required pattern="[a-zA-Z]+">
+                        <input class="textfield" type="text" id="new_name" name="new_name" required placeholder='Must contain "x"' pattern="([a-zA-z]+x)|(X+[a-zA-Z]+)"> 
                         <label for="email">EMAIL</label>
                         <label for="phone">PHONE NUMBER</label>
-                        <input class="textfield" type="email" id="email" name="email"> 
-                        <input class="textfield" type="text" id="phone" name="phone"> 
+                        <input class="textfield" type="email" id="email" name="email" placeholder="mansex@wtnw.com" required > 
+                        <input class="textfield" type="text" id="phone" name="phone" required> 
                         <label for="password">PASSWORD</label>
                         <label for="confirmpassword">CONFIRM PASSWORD</label>
-                        <input class="textfield" type="password" id="password" name="password"> 
-                        <input class="textfield" type="password" id="confirmpassword" name="confirmpassword"> 
+                        <input class="error" type="password" id="password" name="password" required> 
+                        <input class="error" type="password" id="confirmpassword" name="confirmpassword" required> 
                         <label for="already_nobody">Already a Nobody</label>
                         <input class="radio" type="radio" id="already_nobody" name="nobody">
                         <label for="not_nobody">Not a Nobody yet</label>
