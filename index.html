@@ -1,34 +1,61 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Crimson+Text">
-    <link href="style.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Crimson+Text"
+    />
+    <link href="style.css" rel="stylesheet" />
     <script src="script.js" defer></script>
     <title>Organisation XIII Sign Up</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="sidebar">
-            <div class="blur"><svg class="logo" version="1.0" xmlns="http://www.w3.org/2000/svg"
-                width="640.000000pt" height="1137.000000pt" viewBox="0 0 640.000000 1137.000000"
-                preserveAspectRatio="xMidYMid meet">
-                <defs>
-                    <radialGradient id="Gradient" cx="0.5" cy="0.5" r="0.5" fx="0.25" fy="0.25">
-                      <stop offset="0%" stop-color="black" />
-                      <stop offset="100%" stop-color="#323232" />
-                    </radialGradient>
-                    <filter id="f3" x="0" y="0" width="200%" height="200%">
-                        <feOffset result="offOut" in="SourceAlpha" dx="0" dy="0" />
-                        <feGaussianBlur result="blurOut" in="offOut" stdDeviation="8" />
-                        <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
-                    </filter>
-                </defs>
-                <rect class="black-banner" width="100%" height="180" fill="#000000"></rect>
-               <g transform="translate(0.000000,1137.000000) scale(0.100000,-0.100000)"
-               fill="url(#Gradient)" filter="url(#f3)" stroke="none">
-               <path d="M3170 9567 c0 -20 -97 -386 -137 -517 -36 -121 -103 -291 -153 -390
+      <div class="sidebar">
+        <div class="blur">
+          <svg
+            class="logo"
+            version="1.0"
+            xmlns="http://www.w3.org/2000/svg"
+            width="640.000000pt"
+            height="1137.000000pt"
+            viewBox="0 0 640.000000 1137.000000"
+            preserveAspectRatio="xMidYMid meet"
+          >
+            <defs>
+              <radialGradient
+                id="Gradient"
+                cx="0.5"
+                cy="0.5"
+                r="0.5"
+                fx="0.25"
+                fy="0.25"
+              >
+                <stop offset="0%" stop-color="black" />
+                <stop offset="100%" stop-color="#323232" />
+              </radialGradient>
+              <filter id="f3" x="0" y="0" width="200%" height="200%">
+                <feOffset result="offOut" in="SourceAlpha" dx="0" dy="0" />
+                <feGaussianBlur result="blurOut" in="offOut" stdDeviation="8" />
+                <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+              </filter>
+            </defs>
+            <rect
+              class="black-banner"
+              width="100%"
+              height="180"
+              fill="#000000"
+            ></rect>
+            <g
+              transform="translate(0.000000,1137.000000) scale(0.100000,-0.100000)"
+              fill="url(#Gradient)"
+              filter="url(#f3)"
+              stroke="none"
+            >
+              <path
+                d="M3170 9567 c0 -20 -97 -386 -137 -517 -36 -121 -103 -291 -153 -390
                -43 -86 -143 -244 -160 -255 -6 -4 -10 -11 -10 -17 0 -6 18 -7 49 -3 154 21
                295 -105 295 -265 0 -104 -52 -187 -149 -238 -128 -66 -297 -5 -354 129 -22
                51 -31 165 -15 190 9 15 4 12 -99 -58 -188 -128 -471 -235 -930 -353 -92 -24
@@ -49,45 +76,95 @@
                -702 227 -860 345 -27 20 -55 40 -60 43 -7 4 -10 -23 -10 -75 0 -97 -19 -140
                -88 -204 -75 -69 -178 -86 -277 -47 -51 21 -132 109 -148 161 -39 131 16 261
                136 320 47 23 69 28 129 27 l71 -1 -39 54 c-146 197 -273 519 -390 988 -32
-               132 -48 177 -49 142z"/>
-               </g>
-               <text x="150" y="590" filter="url(#f3)" class="thirteen-text">XIII</text>
-               </svg>
-               </div>
+               132 -48 177 -49 142z"
+              />
+            </g>
+            <text x="150" y="590" filter="url(#f3)" class="thirteen-text">
+              XIII
+            </text>
+          </svg>
         </div>
-        <div class="main-content">
-            <div class="pitch-text">Join us in our search for meaning. 
-                Join us to find Kingdom Hearts. You don't have to be a <em>Nobody</em>.
-                You need us to find meaning. You don't know anything yet, only one thing:
-                <br><br>You <em>know</em> you want to.
-            </div>
-            <div class="form">
-                <form>
-                    <div class="card">
-                        <div>JOIN ORGANISATION XIII</div>
-                        <br>
-                        <label for="old_name">OLD NAME</label>
-                        <label for="new_name">NEW NAME</label>
-                        <input autofocus class="textfield" type="text" id="old_name" name="old_name" required pattern="[a-zA-Z]+">
-                        <input class="textfield" type="text" id="new_name" name="new_name" required placeholder='Must contain "x"' pattern="([a-zA-z]+x)|(X+[a-zA-Z]+)"> 
-                        <label for="email">EMAIL</label>
-                        <label for="phone">PHONE NUMBER</label>
-                        <input class="textfield" type="email" id="email" name="email" placeholder="mansex@wtnw.com" required > 
-                        <input class="textfield" type="text" id="phone" name="phone" required> 
-                        <label for="password">PASSWORD</label>
-                        <label for="confirmpassword">CONFIRM PASSWORD</label>
-                        <input class="error" type="password" id="password" name="password" required> 
-                        <input class="error" type="password" id="confirmpassword" name="confirmpassword" required> 
-                        <label for="already_nobody">Already a Nobody</label>
-                        <input class="radio" type="radio" id="already_nobody" name="nobody">
-                        <label for="not_nobody">Not a Nobody yet</label>
-                        <input class="radio" type="radio" id="not_nobody" name="nobody">
-                    </div>
-                    <input type="submit" value="CREATE ACCOUNT">
-                </form>
-                <div>Already a member? <a href="">Log in</a></div>
-            </div>
+      </div>
+      <div class="main-content">
+        <div class="pitch-text">
+          Join us in our search for meaning. Join us to find Kingdom Hearts. You
+          don't have to be a <em>Nobody</em>. You need us to find meaning. You
+          don't know anything yet, only one thing: <br /><br />You
+          <em>know</em> you want to.
         </div>
+        <div class="form">
+          <form>
+            <div class="card">
+              <div>JOIN ORGANISATION XIII</div>
+              <br />
+              <label for="old_name">OLD NAME</label>
+              <label for="new_name">NEW NAME</label>
+              <input
+                autofocus
+                class="textfield"
+                type="text"
+                id="old_name"
+                name="old_name"
+                required
+                pattern="[a-zA-Z]+"
+              />
+              <input
+                class="textfield"
+                type="text"
+                id="new_name"
+                name="new_name"
+                required
+                placeholder='Must contain "x"'
+                pattern="([a-zA-z]+x)|(X+[a-zA-Z]+)"
+              />
+              <label for="email">EMAIL</label>
+              <label for="phone">PHONE NUMBER</label>
+              <input
+                class="textfield"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="mansex@wtnw.com"
+                required
+              />
+              <input
+                class="textfield"
+                type="text"
+                id="phone"
+                name="phone"
+                required
+              />
+              <label for="password">PASSWORD</label>
+              <label for="confirmpassword">CONFIRM PASSWORD</label>
+              <input
+                class="error"
+                type="password"
+                id="password"
+                name="password"
+                required
+              />
+              <input
+                class="error"
+                type="password"
+                id="confirmpassword"
+                name="confirmpassword"
+                required
+              />
+              <label for="already_nobody">Already a Nobody</label>
+              <input
+                class="radio"
+                type="radio"
+                id="already_nobody"
+                name="nobody"
+              />
+              <label for="not_nobody">Not a Nobody yet</label>
+              <input class="radio" type="radio" id="not_nobody" name="nobody" />
+            </div>
+            <input type="submit" value="CREATE ACCOUNT" />
+          </form>
+          <div>Already a member? <a href="">Log in</a></div>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
